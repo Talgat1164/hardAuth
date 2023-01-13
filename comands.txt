@@ -3,3 +3,5 @@ npm i express cors cookie-parser
 npm i nodemon --save-dev
 -
 npm i dotenv
+-
+npm i mongodb mongoose
