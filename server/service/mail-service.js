@@ -1,4 +1,4 @@
-class UserService {
+class MailService {
   async sendActivationMail(to, link) {}
 }
-module.exports = new UserService();
+module.exports = new MailService();
