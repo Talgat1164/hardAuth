@@ -5,3 +5,6 @@ npm i nodemon --save-dev
 npm i dotenv
 -
 npm i mongodb mongoose
+-
+npm i jsonwebtoken bcrypt uuid 
+uuid - для генерации рандомных строк
