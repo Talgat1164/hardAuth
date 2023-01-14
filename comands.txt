@@ -15,3 +15,10 @@ npm i express-validator
 
 --client 
 npm i mobx mobx-react-lite axios @types/axios
+
+Структура
+components - компоненты
+http - с помощью mobX настроим axios
+models
+services - функции с запросами на сервер
+store - взаимодействие с глобальным хранилищем 
