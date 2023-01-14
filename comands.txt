@@ -10,3 +10,5 @@ npm i jsonwebtoken bcrypt uuid
 uuid - для генерации рандомных строк
 -
 npm i nodemailer
+-
+npm i express-validator
