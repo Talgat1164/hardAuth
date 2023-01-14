@@ -8,3 +8,5 @@ npm i mongodb mongoose
 -
 npm i jsonwebtoken bcrypt uuid 
 uuid - для генерации рандомных строк
+-
+npm i nodemailer
