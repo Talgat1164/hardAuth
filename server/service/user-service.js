@@ -22,7 +22,11 @@ class UserService {
       password: hashPassword,
       activationLink,
     });
-    await mailService.sendActivationMail(email, activationLink);
+    await mailService.sendActivationMail(
+      email,
+      `${process.env.API_URL}/api/activate/${activationLink}`
+    );
+
     // сохраняем пользователя в бд
 
     const userDto = new UserDto(user); // id, email, isActivated
@@ -30,7 +34,7 @@ class UserService {
     const tokens = tokenService.generateTokens({ ...userDto }); // генерируем токены
     await tokenService.saveToken(userDto.id, tokens.refreshToken); // сохраняем токены в базу данных
 
-    return {  
+    return {
       ...tokens,
       user: userDto,
     };
