@@ -12,3 +12,6 @@ uuid - для генерации рандомных строк
 npm i nodemailer
 -
 npm i express-validator
+
+--client 
+npm i mobx mobx-react-lite axios @types/axios
