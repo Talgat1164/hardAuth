@@ -43,6 +43,7 @@ const App: FC = () => {
   return (
      <div>
         <h1>{store.isAuth ? `Пользователь авторизован ${store.user.email}` : 'АВТОРИЗУЙТЕСЬ'}</h1>
+        <h1>{store.user.isActivated ? 'Аккаунт подтвержден по почте' : 'ПОДТВЕРДИТЕ АККАУНТ!!!!'}</h1>
         <button onClick={() => store.logout()}>Выйти</button>
         <div>
           <button onClick={getUsers}>Получить пользователей</button>
